@@ -1,169 +1,105 @@
 <!doctype html>
 <html lang="en">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>PetConnect Shelter — Home</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Explore Mental Wellness</title>
 
-  <!-- Bootstrap CSS -->
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Bootstrap -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
 
-  <!-- Extra CSS library -->
+  <!-- Animate.css -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
 
   <!-- Google Fonts -->
-  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;700&family=Work+Sans:wght@600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;700&family=Poppins:wght@500;700&display=swap" rel="stylesheet">
 
-  <!-- Custom Styles -->
+  <!-- Custom CSS -->
   <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
 
-  <!-- Skip link -->
-  <a class="skip-link" href="#main">Skip to main content</a>
+<!-- Skip link -->
+<a href="#main" class="skip-link">Skip to main content</a>
 
-  <!-- Header -->
-  <header class="site-header bg-white shadow-sm">
-    <nav class="container navbar navbar-expand-lg" aria-label="Primary">
-      <a class="navbar-brand d-flex align-items-center" href="index.html">
-        <svg width="36" height="36" aria-hidden="true" focusable="false" viewBox="0 0 24 24">
-          <rect width="24" height="24" rx="5" fill="var(--accent)"></rect>
-          <text x="12" y="15" text-anchor="middle" font-family="Work Sans, sans-serif" font-size="10" fill="#fff">PC</text>
-        </svg>
-        <span class="ms-2 brand">PetConnect</span>
-      </a>
+<header class="bg-white shadow-sm">
+  <nav class="navbar navbar-expand-lg container">
+    <a class="navbar-brand fw-bold" href="#">MentalWell</a>
+    <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navMain"
+      aria-controls="navMain" aria-expanded="false" aria-label="Toggle menu">
+      <span class="navbar-toggler-icon"></span>
+    </button>
 
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMain"
-        aria-controls="navMain" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-
-      <div id="navMain" class="collapse navbar-collapse">
-        <ul class="navbar-nav ms-auto align-items-center">
-          <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
-          <li class="nav-item"><a class="nav-link" href="articles.html">Articles & Tips</a></li>
-          <li class="nav-item"><a class="nav-link" href="meditation.html">Meditation</a></li>
-          <li class="nav-item"><a class="nav-link" href="#">Get Involved</a></li>
-          <li class="nav-item"><a class="btn btn-sm btn-primary ms-3" href="#">Donate</a></li>
-        </ul>
-      </div>
-    </nav>
-  </header>
-
-  <!-- Main -->
-  <main id="main" class="container my-5" role="main">
-    <!-- Hero -->
-    <section class="hero row align-items-center gy-4">
-      <div class="col-lg-6">
-        <h1 class="display-6 fw-bold">Find a loving companion — adopt, donate, or volunteer</h1>
-        <p class="lead text-muted">PetConnect helps pets find forever homes. Browse profiles, learn, and give support.</p>
-        <div class="d-flex gap-2">
-          <a class="btn btn-lg btn-primary" href="articles.html">Read Tips</a>
-          <a class="btn btn-lg btn-outline-secondary" href="meditation.html">Wellness</a>
-        </div>
-      </div>
-
-      <div class="col-lg-6">
-        <picture>
-          <source media="(min-width:1200px)" srcset="images/hero-xl.jpg">
-          <source media="(min-width:768px)" srcset="images/hero-md.jpg">
-          <img src="images/hero-sm.jpg" alt="Woman happily holding a dog" class="img-fluid rounded shadow-sm">
-        </picture>
-      </div>
-    </section>
-
-    <!-- Featured animals -->
-    <section class="mt-5" aria-labelledby="featured">
-      <h2 id="featured" class="h5 mb-3">Featured animals</h2>
-      <div class="row g-3">
-        <article class="col-12 col-md-6 col-lg-4">
-          <div class="card h-100">
-            <img src="images/pet-a-sm.jpg" class="card-img-top" alt="Brown terrier named Roo">
-            <div class="card-body d-flex flex-column">
-              <h3 class="h6">Roo — Terrier</h3>
-              <p class="small text-muted mb-3">2 years • Friendly • Good with kids</p>
-              <div class="mt-auto d-flex gap-2">
-                <a class="btn btn-outline-primary btn-sm" href="articles.html">Learn Care</a>
-                <a class="btn btn-primary btn-sm" href="meditation.html">Support Shelter</a>
-              </div>
-            </div>
-          </div>
-        </article>
-
-        <article class="col-12 col-md-6 col-lg-4">
-          <div class="card h-100">
-            <img src="images/pet-b-sm.jpg" class="card-img-top" alt="Grey cat named Luna">
-            <div class="card-body d-flex flex-column">
-              <h3 class="h6">Luna — Cat</h3>
-              <p class="small text-muted mb-3">3 years • Calm • Indoor</p>
-              <div class="mt-auto d-flex gap-2">
-                <a class="btn btn-outline-primary btn-sm" href="articles.html">Training Tips</a>
-                <a class="btn btn-primary btn-sm" href="#">Adopt</a>
-              </div>
-            </div>
-          </div>
-        </article>
-
-        <article class="col-12 col-md-6 col-lg-4">
-          <div class="card h-100">
-            <img src="images/pet-c-sm.jpg" class="card-img-top" alt="Golden dog named Marley">
-            <div class="card-body d-flex flex-column">
-              <h3 class="h6">Marley — Retriever</h3>
-              <p class="small text-muted mb-3">4 years • Active • Trainable</p>
-              <div class="mt-auto d-flex gap-2">
-                <a class="btn btn-outline-primary btn-sm" href="articles.html">Exercise Ideas</a>
-                <a class="btn btn-primary btn-sm" href="#">Meet</a>
-              </div>
-            </div>
-          </div>
-        </article>
-      </div>
-    </section>
-
-    <!-- How it works -->
-    <section class="mt-5" aria-labelledby="how">
-      <h2 id="how" class="h5 mb-3">How adoption works</h2>
-      <div class="row text-center g-3">
-        <div class="col-12 col-md-4">
-          <div class="p-3 step bg-white rounded shadow-sm">
-            <div class="step-icon mb-2">🐾</div>
-            <h3 class="h6">Browse Profiles</h3>
-            <p class="small text-muted">Filter by traits and preferences.</p>
-          </div>
-        </div>
-        <div class="col-12 col-md-4">
-          <div class="p-3 step bg-white rounded shadow-sm">
-            <div class="step-icon mb-2">🤝</div>
-            <h3 class="h6">Meet & Evaluate</h3>
-            <p class="small text-muted">Schedule a safe visit with the animal.</p>
-          </div>
-        </div>
-        <div class="col-12 col-md-4">
-          <div class="p-3 step bg-white rounded shadow-sm">
-            <div class="step-icon mb-2">🏠</div>
-            <h3 class="h6">Bring Home</h3>
-            <p class="small text-muted">Complete paperwork and welcome them home.</p>
-          </div>
-        </div>
-      </div>
-    </section>
-
-  </main>
-
-  <!-- Footer -->
-  <footer class="site-footer bg-white border-top py-4">
-    <div class="container d-flex justify-content-between align-items-center">
-      <small class="text-muted">© <span id="year-home"></span> PetConnect Shelter</small>
-      <nav aria-label="Footer">
-        <a class="me-3 text-muted" href="#">Privacy</a>
-        <a class="me-3 text-muted" href="#">Terms</a>
-        <a class="text-muted" href="#">Contact</a>
-      </nav>
+    <div id="navMain" class="collapse navbar-collapse">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item"><a class="nav-link active" href="index.html">Home</a></li>
+        <li class="nav-item"><a class="nav-link" href="articles.html">Articles & Tips</a></li>
+        <li class="nav-item"><a class="nav-link" href="meditation.html">Meditations</a></li>
+      </ul>
     </div>
-  </footer>
+  </nav>
+</header>
 
-  <!-- Bootstrap JS bundle -->
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-  <script>document.getElementById('year-home').textContent = new Date().getFullYear();</script>
+
+<main id="main" class="container my-5">
+
+  <!-- Hero Section -->
+  <section class="row align-items-center gy-4">
+    <div class="col-lg-6">
+      <h1 class="display-5 fw-bold">Explore Mental Wellness</h1>
+      <p class="lead text-muted">Find calm, improve sleep, reduce stress, and reconnect with yourself through guided tools and evidence-based practices.</p>
+      <div class="d-flex gap-3">
+        <a href="meditation.html" class="btn btn-primary btn-lg">Start Meditating</a>
+        <a href="articles.html" class="btn btn-outline-secondary btn-lg">Read Tips</a>
+      </div>
+    </div>
+
+    <div class="col-lg-6">
+      <picture>
+        <source media="(min-width:992px)" srcset="images/hero-lg.jpg">
+        <source media="(min-width:600px)" srcset="images/hero-md.jpg">
+        <img src="images/hero-sm.jpg" class="img-fluid rounded shadow-sm" alt="Person relaxing in a calm environment">
+      </picture>
+    </div>
+  </section>
+
+  <!-- Wellness Highlights -->
+  <section class="mt-5">
+    <h2 class="h5 mb-3">Your Wellness Areas</h2>
+    <div class="row g-3">
+      <div class="col-md-4">
+        <div class="info-card p-3 rounded shadow-sm">
+          <h3 class="h6">Stress Relief</h3>
+          <p class="small">Learn breathing exercises and grounding techniques to ease tension.</p>
+        </div>
+      </div>
+
+      <div class="col-md-4">
+        <div class="info-card p-3 rounded shadow-sm">
+          <h3 class="h6">Better Sleep</h3>
+          <p class="small">Discover bedtime routines and calming meditations for restful nights.</p>
+        </div>
+      </div>
+
+      <div class="col-md-4">
+        <div class="info-card p-3 rounded shadow-sm">
+          <h3 class="h6">Improved Focus</h3>
+          <p class="small">Short sessions designed to boost clarity and concentration.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="border-top bg-white py-4 text-center small text-muted">
+  © <span id="year-home"></span> MentalWell. All rights reserved.
+</footer>
+
+<script>
+  document.getElementById("year-home").textContent = new Date().getFullYear();
+</script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
 </body>
 </html>
