@@ -1,133 +1,123 @@
 <!doctype html>
 <html lang="en">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>Articles & Tips — PetConnect</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Articles & Wellness Tips</title>
 
-  <!-- Bootstrap CSS -->
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
-  <!-- Animate.css -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
-  <!-- Fonts -->
-  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;700&family=Work+Sans:wght@600&display=swap" rel="stylesheet">
-  <!-- Styles -->
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;700&family=Poppins:wght@500&display=swap" rel="stylesheet">
+
   <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
 
-  <a class="skip-link" href="#content">Skip to content</a>
+<a class="skip-link" href="#content">Skip to content</a>
 
-  <header class="bg-white shadow-sm">
-    <nav class="container navbar navbar-expand-lg" aria-label="Primary">
-      <a class="navbar-brand" href="index.html">PetConnect</a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#nav2"
-        aria-controls="nav2" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div id="nav2" class="collapse navbar-collapse">
-        <ul class="navbar-nav ms-auto">
-          <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
-          <li class="nav-item"><a class="nav-link active" href="articles.html">Articles & Tips</a></li>
-          <li class="nav-item"><a class="nav-link" href="meditation.html">Meditation</a></li>
-        </ul>
-      </div>
-    </nav>
+<header class="bg-white shadow-sm">
+  <nav class="navbar navbar-expand-lg container">
+    <a class="navbar-brand fw-bold" href="index.html">MentalWell</a>
+    <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#nav"
+      aria-controls="nav" aria-expanded="false" aria-label="Toggle menu">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div id="nav" class="collapse navbar-collapse">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+        <li class="nav-item"><a class="nav-link active" href="articles.html">Articles & Tips</a></li>
+        <li class="nav-item"><a class="nav-link" href="meditation.html">Meditations</a></li>
+      </ul>
+    </div>
+  </nav>
+</header>
+
+
+<main id="content" class="container my-5">
+  <header class="mb-4">
+    <h1 class="display-6">Articles & Tips</h1>
+    <p class="text-muted">Short, practical insights to support your mental wellbeing.</p>
   </header>
 
-  <main id="content" class="container my-5" role="main">
-    <header class="mb-4">
-      <h1 class="display-6">Articles & Tips</h1>
-      <p class="text-muted">Helpful guidance on pet care, training, and wellbeing.</p>
-    </header>
-
-    <!-- Filters Bar -->
-    <section aria-label="Article filters" class="mb-4">
-      <form class="row g-2 align-items-center">
-        <div class="col-12 col-md-6">
-          <label for="searchArticles" class="visually-hidden">Search articles</label>
-          <input id="searchArticles" class="form-control" type="search" placeholder="Search articles (e.g., training, health)">
-        </div>
-        <div class="col-6 col-md-3">
-          <label for="topic" class="visually-hidden">Topic</label>
-          <select id="topic" class="form-select">
-            <option value="">All topics</option>
-            <option>Training</option>
-            <option>Health</option>
-            <option>Nutrition</option>
-            <option>Behavior</option>
-          </select>
-        </div>
-
-        <div class="col-6 col-md-3 d-grid">
-          <button class="btn btn-primary">Filter</button>
-        </div>
-      </form>
-    </section>
-
-    <!-- Articles grid -->
-    <section aria-labelledby="articles-list">
-      <h2 id="articles-list" class="h5 visually-hidden">Articles</h2>
-      <div class="row g-4">
-        <!-- article 1 -->
-        <article class="col-12 col-md-6 col-lg-4">
-          <div class="card h-100">
-            <img src="images/article-1-sm.jpg" alt="dog training illustration" class="card-img-top">
-            <div class="card-body d-flex flex-column">
-              <h3 class="h6">Teach Fetch Easily</h3>
-              <p class="small text-muted mb-2">Training • 5 min read</p>
-              <p class="mb-3 small">Step-by-step tips to get your dog fetching with enthusiasm.</p>
-              <a class="mt-auto btn btn-outline-primary btn-sm" href="#">Read article</a>
-            </div>
-          </div>
-        </article>
-
-        <!-- article 2 -->
-        <article class="col-12 col-md-6 col-lg-4">
-          <div class="card h-100">
-            <img src="images/article-2-sm.jpg" alt="cat nutrition image" class="card-img-top">
-            <div class="card-body d-flex flex-column">
-              <h3 class="h6">Healthy Cat Diets</h3>
-              <p class="small text-muted mb-2">Nutrition • 6 min</p>
-              <p class="mb-3 small">How to choose food that supports long-term wellness for indoor cats.</p>
-              <a class="mt-auto btn btn-outline-primary btn-sm" href="#">Read article</a>
-            </div>
-          </div>
-        </article>
-
-        <!-- article 3 -->
-        <article class="col-12 col-md-6 col-lg-4">
-          <div class="card h-100">
-            <img src="images/article-3-sm.jpg" alt="puppy socialization" class="card-img-top">
-            <div class="card-body d-flex flex-column">
-              <h3 class="h6">Socialize Your Puppy</h3>
-              <p class="small text-muted mb-2">Behavior • 7 min</p>
-              <p class="mb-3 small">Safe activities to help puppies feel confident around people and pets.</p>
-              <a class="mt-auto btn btn-outline-primary btn-sm" href="#">Read article</a>
-            </div>
-          </div>
-        </article>
-      </div>
-    </section>
-
-    <!-- Pagination -->
-    <nav class="mt-4" aria-label="Article pages">
-      <ul class="pagination justify-content-center">
-        <li class="page-item disabled"><a class="page-link" href="#">Prev</a></li>
-        <li class="page-item active"><a class="page-link" href="#">1</a></li>
-        <li class="page-item"><a class="page-link" href="#">2</a></li>
-        <li class="page-item"><a class="page-link" href="#">Next</a></li>
-      </ul>
-    </nav>
-  </main>
-
-  <footer class="bg-white border-top py-4">
-    <div class="container text-center small text-muted">
-      © <span id="year-articles"></span> PetConnect — Articles & Tips
+  <!-- Search/filter -->
+  <form class="row g-3 mb-4">
+    <div class="col-md-6">
+      <input type="search" class="form-control" placeholder="Search articles (e.g., stress, sleep)">
     </div>
-  </footer>
+    <div class="col-md-3">
+      <select class="form-select">
+        <option value="">All topics</option>
+        <option>Stress</option>
+        <option>Sleep</option>
+        <option>Focus</option>
+        <option>Mood</option>
+      </select>
+    </div>
+    <div class="col-md-3 d-grid">
+      <button class="btn btn-primary">Filter</button>
+    </div>
+  </form>
 
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-  <script>document.getElementById('year-articles').textContent = new Date().getFullYear();</script>
+  <!-- Articles grid -->
+  <div class="row g-4">
+
+    <article class="col-md-4">
+      <div class="card h-100">
+        <img src="images/art1.jpg" class="card-img-top" alt="Calming nature image">
+        <div class="card-body">
+          <h3 class="h6">Breathe. Relax. Reset.</h3>
+          <p class="small text-muted">Stress • 4 min read</p>
+          <p class="small">Quick breathing techniques to ground yourself during tense moments.</p>
+          <a href="#" class="btn btn-outline-primary btn-sm mt-2">Read more</a>
+        </div>
+      </div>
+    </article>
+
+    <article class="col-md-4">
+      <div class="card h-100">
+        <img src="images/art2.jpg" class="card-img-top" alt="Sleep imagery">
+        <div class="card-body">
+          <h3 class="h6">Sleep Smarter Tonight</h3>
+          <p class="small text-muted">Sleep • 5 min read</p>
+          <p class="small">Simple habits to wind down and support deep, restorative sleep.</p>
+          <a href="#" class="btn btn-outline-primary btn-sm mt-2">Read more</a>
+        </div>
+      </div>
+    </article>
+
+    <article class="col-md-4">
+      <div class="card h-100">
+        <img src="images/art3.jpg" class="card-img-top" alt="Focus imagery">
+        <div class="card-body">
+          <h3 class="h6">Focus Through Stillness</h3>
+          <p class="small text-muted">Focus • 3 min read</p>
+          <p class="small">How short mindfulness breaks can help sharpen concentration.</p>
+          <a href="#" class="btn btn-outline-primary btn-sm mt-2">Read more</a>
+        </div>
+      </div>
+    </article>
+
+  </div>
+
+  <nav class="mt-4">
+    <ul class="pagination justify-content-center">
+      <li class="page-item disabled"><a class="page-link">Prev</a></li>
+      <li class="page-item active"><a class="page-link">1</a></li>
+      <li class="page-item"><a class="page-link">2</a></li>
+      <li class="page-item"><a class="page-link">Next</a></li>
+    </ul>
+  </nav>
+</main>
+
+<footer class="py-4 border-top text-center small text-muted">
+  © <span id="year-art"></span> MentalWell
+</footer>
+
+<script>
+  document.getElementById("year-art").textContent = new Date().getFullYear();
+</script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
 </body>
 </html>
